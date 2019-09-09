@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://at.alicdn.com/t/font_1326606_gwicnrctlh7.js
+    "></script>
     <title>画板</title>
 </head>
 <body>
     <canvas id="xxx" width=300 height=300></canvas>
     <div id="actions" class="actions">    
-        <button id="eraser">橡皮擦</button>
-        <button id="brush">画笔</button>
+        <svg  id='pen' class="icon active" >
+            <use xlink:href="#icon-pan_icon"></use>
+        </svg>
+        <svg id='eraser' class="icon" >
+            <use xlink:href="#icon-xiangpi"></use>
+        </svg>
+        <svg id='clear' class="icon" >
+            <use xlink:href="#icon-shanchu"></use>
+        </svg>
+        <svg id='download' class="icon" >
+            <use xlink:href="#icon-save"></use>
+        </svg>
     </div>
+    <ol class="colors">
+        <li  id=red class="red"></li>
+        <li id=green class="green"></li>
+        <li id=blue class="blue"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class="thin"></li>
+        <li id="thick" class="thick"></li>
+    </ol>
 
 </body>
 <script src="./main.js"></script>
 </html>
+
